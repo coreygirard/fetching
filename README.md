@@ -57,7 +57,7 @@ class Webpage(object):
 class Webpage(object):
     def __init__(self,url):
         self.url = url
-    
+
     def fetch(self):
         self.page = requests.get(url).text
 
@@ -71,7 +71,7 @@ Once your class is formatted correctly, use simple wrapper classes to give the d
 from fetching import FetchWhenNeeded
 
 example = Example(5)
-example = FetchWhenNeeded(5)
+example = FetchWhenNeeded(example)
 
 # example.parsed doesn't exist yet
 
@@ -83,15 +83,10 @@ print(example.getParsed()) # runs Example.fetch and returns .getParsed()
 from fetching import FetchInBackground
 
 example = Example(5)
-example = FetchInBackground(5)
+example = FetchInBackground(example)
 
 # Example.fetch is being run in a separate thread
 
 print(example.getParsed()) # runs Example.fetch and returns .getParsed()
 
 ```
-
-
-
-
-
