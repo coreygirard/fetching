@@ -87,6 +87,7 @@ example = FetchInBackground(example)
 
 # Example.fetch is being run in a separate thread
 
-print(example.getParsed()) # runs Example.fetch and returns .getParsed()
+# some time later...
+print(example.getParsed())
 
 ```
