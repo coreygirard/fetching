@@ -1,3 +1,4 @@
 .ropeproject
 .DS_Store
 *.pyc
+.cache
