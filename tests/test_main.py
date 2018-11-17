@@ -1,6 +1,8 @@
 import time
-from fetching import Fetcher, FetchWhenNeeded, FetchInBackground
+
 import pytest
+
+from fetching import Fetcher, FetchInBackground, FetchWhenNeeded
 
 
 class Fetchable(object):
