@@ -1,5 +1,8 @@
 # fetching
 
+[![Build Status](https://travis-ci.org/coreygirard/fetching.svg?branch=master)](https://travis-ci.org/coreygirard/fetching) <br>
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
+
 **Fetching** is a small library that enables easy [lazy initialization](https://en.wikipedia.org/wiki/Lazy_initialization).
 
 To use Fetching, define your class with an `__init__` function that stores all necessary seed data, and a `fetch` function that does the computationally expensive initializations. Don't call `fetch` from `__init__`. If you designed the class correctly, the following sequence should result in a fully initialized class instance:
